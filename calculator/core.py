@@ -16,3 +16,6 @@ def divide(a: float, b: float) -> float:
     if b == 0:
         raise ValueError("Division by zero")
     return a / b
+def power(a: float, b: float) -> float:
+    """Возводит число a в степень b."""
+    return a ** b
