@@ -19,3 +19,11 @@ def divide(a: float, b: float) -> float:
 def power(a: float, b: float) -> float:
     """Возводит число a в степень b."""
     return a ** b
+def modulo(a: float, b: float) -> float:
+    """Возвращает остаток от деления a на b.
+
+    Выбрасывает ValueError при делении на ноль.
+    """
+    if b == 0:
+        raise ValueError("Division by zero")
+    return a % b
